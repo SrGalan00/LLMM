@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var cad="Lenguaje de marcas";
+        var miarray;
+
+        //funciones de texto
+        document.write("Longitud: " +cad.length + "<br>"); //digitos de una cadena de texto
+        document.write(cad.toUpperCase() + "<br>"); //Lo convierte en mayuscula
+        document.write(cad.charAt(5) + "<br>"); //saca el caracter em la posicion 5
+        document.write(cad.indexOf("a") + "<br>") // saca la primera posicion de la letra en cuestion
+        document.write(cad.substring(0,8) + "<br>") //saca los caracteres desde la posicion 0 hasta la 8
+        miarray = cad.split(" "); //te divide 
+        document.write(miarray + "<br>");
+
+
+        //Array (3) ["Lenguaje", "de", "marcas"]
+
+        //Funciones de array 
+        document.write(miarray.join("1212") + "<br>"); //Entre elemento y elemento pone lo que hay en el parentesis
+        document.write(miarray.pop() + "<br>") 
+        document.write(miarray.push("base de datos") + "<br>");
+        document.write(miarray.shift()+"<br>") //Elimina el primer elemento del array
+        document.write(miarray.reverse() +"<br>") //Coloca el array al reves
+
+    </script>
+</head>
+<body>
+    <p>Funciones y propiedades predefinidas</p>
+</body>
+</html>

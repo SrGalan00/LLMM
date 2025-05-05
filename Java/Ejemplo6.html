@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cambiar(){
+            var titulo = document.getElementById("Titulo");  
+            var boton= document.getElementsByTagName("input")[0];
+            boton.value = "cambiado"; //Se cambia la propiedad value dentro del inputo lo que hace que se cambie el texto
+            var duracion = document.getElementById("Duracion").innerHTML = "<b> 250 </b>" //cambia el valor de la duracion
+            
+            titulo.style.border = "solid 2px chocolate";
+            titulo.style.textAlign ="center";
+            titulo.style.boxShadow="10px 10px 10px grey";
+
+            cuerpo.style.backgroundcolor= "black";
+            cuerpo.style.color= "white";
+            boton.style.backgroundColor="white";
+            
+
+        }
+        
+
+    </script>
+</head>
+<body id="Cuerpo">
+    <h1 id="Titulo"> Desarrollo de aplicaciones <br>multiplataforma</h1>
+    <h2 id="Modulo"> Lenguaje de marcas</h2>
+    <h2 id="Duracion">Duracion: <span id="Duracion"> 129</span> horas</h2>
+    <input type="button" value="Cambiar" onclick="cambiar()">
+</body>
+</html>

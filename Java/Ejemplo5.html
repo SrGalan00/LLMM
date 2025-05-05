@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>    
+        function cambia(){
+            var elemento = document.getElementById('parrafo');
+            elemento.style.color="Blue";
+
+           // var elemento =document.getElementsByTagName("p")[0]; Selecciona el parrafo y cambia el color del caracter en la primera posicion
+
+           console.log(elemento);
+
+           elemento.innerText = "Hola <b> a todos </b>" //Introduce literalmente lo escrito
+           elemento.innerHTML = "Hola <b> a todos </b>" //Coge las etiquetas
+        }
+    </script>
+</head>
+<body>
+    <p id="parrafo"> Pulse el boton para cambiar su contenido </p>
+    <p id="parrafo1"> Este es el parrafo 1</p>
+
+    <button onclick="cambia()">Cambiar</button>
+</body>
+</html>

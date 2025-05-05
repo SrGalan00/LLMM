@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function addElement(){
+                var input = document.getElementById("newLine").value;
+                
+            if(input){
+                
+                console.log("input");
+
+                var newLi = document.createElement("li");
+                var lista = document.getElementsByTagName("ul")[0];
+                lista.appendChild(newLi); //Agrego una cosa dentro de otra
+                newLi.innerHTML= input;
+            
+                document.getElementById("newLine").value=" ";
+            }
+            else{
+                document.getElementById("newLine").style.backgroundColor="Red";
+            }
+        }
+  
+
+    </script>
+</head>
+<body>
+    <input id="newLine" type="newLine" type="text" name="newLine">
+    <button onclick="addElement()"> Introducir</button>
+    <ul>
+
+    </ul>
+</body>
+</html>

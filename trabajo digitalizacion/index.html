@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #b7e3e5;
+            color: #1b1b1b;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #b7e3e5;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .btn {
+            background-color: #432b2b;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .logo {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .productos, .servicios {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .productos h2, .servicios h2 {
+            margin-bottom: 30px;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 50%;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+        }
+        .servicio-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+        }
+        .servicios .cards {
+            gap: 20px;
+        }
+        .cita, .marca, .redes {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .cita form, .cita .pasos {
+            max-width: 500px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .equipo {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .equipo img {
+            border-radius: 50%;
+            width: 100px;
+        }
+        .video {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>PetCare</div>
+        <nav>
+            <a href="#tienda">Tienda</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#acerca">Acerca de</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#carrito">Carrito</a>
+        </nav>
+        <button class="btn">Reservar</button>
+    </header>
+
+    <div class="logo">
+        <img src="logo.png" alt="PetCare Logo" width="300">
+    </div>
+
+    <section class="productos">
+        <h2>Productos destacados</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="/mnt/data/bbbf46ad-d1fe-4f63-ac83-8750228c9abf.png" width="150">
+                <p>Pienso para perros pequeños<br>A partir de 20 €</p>
+            </div>
+            <div class="card">
+                <img src="/mnt/data/c8285b40-9934-41cd-8c47-431b80e5c7c7.png" width="150">
+                <p>Pienso para perros medianos<br>A partir de 40 €</p>
+            </div>
+            <div class="card">
+                <img src="/mnt/data/90e01058-6d0f-450f-affc-73acbdbd95e0.png" width="150">
+                <p>Pienso XXL<br>A partir de 60 €</p>
+            </div>
+        </div>
+        <button class="btn" style="margin-top: 20px;">Ver todo</button>
+    </section>
+
+    <section class="servicios" id="servicios">
+        <h2>Nuestros servicios</h2>
+        <div class="cards">
+            <div class="servicio-card">
+                <h4>Servicio de vacunación</h4>
+                <p><strong>A partir de 9 €</strong></p>
+                <p><strong>¡Protege a tu mejor amigo con nuestras vacunas!</strong><br>Ofrecemos un completo servicio de vacunación para perros y gatos, adaptado a su edad y necesidades.</p>
+            </div>
+            <div class="servicio-card">
+                <h4>Servicio de atención básica</h4>
+                <p><strong>A partir de 14 €</strong></p>
+                <p><strong>Cuidamos a tu mascota como parte de nuestra familia</strong><br>Consultas generales, chequeos, control de peso y más.</p>
+            </div>
+            <div class="servicio-card">
+                <h4>Servicio de lavado y peluquería</h4>
+                <p><strong>A partir de 8 €</strong></p>
+                <p><strong>¡Tu mascota limpia, feliz y oliendo genial!</strong><br>Baños con productos especiales y trato amable.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cita">
+        <h2>Pide una cita</h2>
+        <p>Confía en nuestro equipo para cuidar a tu mascota. Programa su cita hoy mismo.</p>
+        <div class="pasos">
+            <p>1. Elige la cita</p>
+            <button class="btn">Haz una reserva</button>
+            <p>2. Tus datos</p>
+            <p>3. Confirmación</p>
+        </div>
+    </section>
+
+    <section class="marca" id="acerca">
+        <h2>Más sobre nuestra marca PetCare</h2>
+        <p>Estamos comprometidos con la atención integral y de calidad para tus mascotas. Contamos con un equipo de veterinarios altamente capacitados.</p>
+        <button class="btn">Leer más</button>
+    </section>
+
+    <section class="redes">
+        <h2>Síguenos en las redes sociales</h2>
+        <div class="equipo">
+            <div>
+                <img src="avatar1.png" alt="Jorge">
+                <p>Jorge Liébana Navarro</p>
+            </div>
+            <div>
+                <img src="avatar2.png" alt="Manuel">
+                <p>Manuel José Galán Moral</p>
+            </div>
+            <div>
+                <img src="avatar3.png" alt="Daniel">
+                <p>Daniel Jesús Serrano Sirvent</p>
+            </div>
+            <div>
+                <img src="avatar4.png" alt="Cristina">
+                <p>Cristina Ahumada Martínez</p>
+            </div>
+        </div>
+        <div class="video">
+            <video controls width="300">
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta este video.
+            </video>
+        </div>
+    </section>
+</body>
+</html>

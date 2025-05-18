@@ -1,18 +1,25 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
-    background: linear-gradient(to right, #ffe5b4, #ffecd2);
+    background-color: #f7f7f7;
     color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* CENTRA TODO horizontalmente */
 }
 
-h1 {
+/* Encabezados */
+h1, h2 {
     text-align: center;
-    color: #d35400;
+    color: #007bff;
 }
 
-button {
+/* Botón principal */
+#add-recipe-btn {
     padding: 10px 20px;
-    background-color: #e67e22;
+    margin: 10px 0 20px 0;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -20,45 +27,44 @@ button {
     font-size: 1em;
 }
 
-button:hover {
-    background-color: #ca6f1e;
+#add-recipe-btn:hover {
+    background-color: #0056b3;
 }
 
-#recipes-container {
-    margin-top: 20px;
+/* Contenedores */
+#recipes-container, #archived-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto;
 }
 
+/* Recetas */
 .recipe {
     background-color: white;
-    border-left: 5px solid #e67e22;
-    margin-bottom: 20px;
-    padding: 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 .recipe .name {
-    font-size: 1.4em;
-    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .recipe .details {
     display: none;
     margin-top: 10px;
-}
-
-.recipe.archived {
-    opacity: 0.6;
-    background-color: #f9f9f9;
+    white-space: pre-line;
 }
 
 .recipe button {
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 6px 12px;
-    background-color: #27ae60;
+    background-color: #28a745;
     color: white;
     border: none;
     border-radius: 3px;
@@ -66,13 +72,10 @@ button:hover {
 }
 
 .recipe button:hover {
-    background-color: #1e8449;
+    background-color: #218838;
 }
 
-.recipe .name:hover {
-    color: #d35400;
-}
-
+/* Contenedor de recetas archivadas */
 #archived-container {
     margin-top: 20px;
     background-color: #f0f0f0;
